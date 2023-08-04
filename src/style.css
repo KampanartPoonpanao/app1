@@ -1,0 +1,11 @@
+h2{
+    front-size: 20px;
+    color:blue;
+    text-align: center;
+}
+.title{
+    front-size: 16px;
+    color:green;
+    text-decoration: underline;
+    text-align: center;
+}
