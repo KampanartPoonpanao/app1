@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.css'
 import {Header, Content, Footer} from './func-components'
+import Calendar from './class-components' 
 
 function App() {
   const divStyle = {
@@ -16,7 +17,10 @@ function App() {
   <div style={divStyle}>Hello react</div>
   <h2>DeveloperThai.com</h2>
   <div className='title'>React & React Native</div>
-  [<Header/>,<Content/>, <Footer />]
+  <Header/>
+  <p><center><Calendar/></center></p>
+  <Content/>
+  <Footer/>
   </>
   );
 }
