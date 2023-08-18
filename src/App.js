@@ -3,7 +3,7 @@ import Banner from './banner'
 import {Calculator} from './calculator'
 import {EventData2} from './event-data'
 
-function App() {
+export default function App() {
   return (
   <>
   <Banner/>
@@ -13,4 +13,4 @@ function App() {
   );
 }
 
-export default App;
+
