@@ -1,12 +1,14 @@
 import React from 'react'
-import MessageBox from './state-func'
-import RefsFunc from './refs-func'
-import RefsArray from './refs-array'
+import { userContext } from './context'
+import Header2 from './context-header2'
+import Content2 from './context-content2'
 
 export default function App() {
-  return <>
-  <p style={{textAlign:'center'}}>งาน 1 </p><RefsFunc/><hr></hr>
-  <p style={{textAlign:'center'}}>งาน 2 </p><RefsArray/><hr></hr>
-  <p style={{textAlign:'center'}}>งาน 3 </p><MessageBox/><hr></hr>
-  </>
+  let [user,setUser] = React.useState('')
+  return (
+    <userContext.Provider value={[user,setUser]}>
+      <Header2/>
+      <Content2/>
+    </userContext.Provider>
+  )
 }
