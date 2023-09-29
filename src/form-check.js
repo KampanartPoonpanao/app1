@@ -68,12 +68,10 @@ export default function FormCheck(){
                     })
                 }
 
-                <div className="form-check form-switch mt-3"><label className="switch">
+                <div className="form-check form-switch mt-3">
                     <input type="checkbox" id="sw" value="require"
                     className="form-check-input" ref={switchReq}/>
-                    <span className="slider"></span>
                     <label htmlFor="sw" className="form-check-label">require</label>
-                    </label>
                 </div>
 
                 <div className="text-center mt-4">
